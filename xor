@@ -1,0 +1,17 @@
+int retard=2000;
+
+  void setup() {  
+  DDRB = 0b111111; 
+  DDRB = DDRB |0b000100;    
+  } 
+  
+  void loop() {   
+  cambiarEstadoLed(10);  
+  delay(retard);
+  
+ }
+ 
+ void cambiarEstadoLed(int num){
+ PORTB= PORTB ^ 0b000100;
+ 
+} 
